@@ -1,0 +1,14 @@
+name: Huee it
+main: pawarenessc\HI\Main
+version: 0.1
+api: [4,3]
+author: PawarenessC
+load: POSTWORLD
+description: 増え鬼
+commands:
+ setupui:
+  description: "鬼ごっこの制御"
+  usage: "/hiset"
+ tagui:
+  description: "鬼ごっこに参加"
+  usage: "/hi"
