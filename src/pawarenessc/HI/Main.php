@@ -65,28 +65,35 @@ class Main extends pluginBase implements Listener
  			$this->getLogger()->info("最終更新:2019/04/04");
  			$this->getLogger()->info("=========================");
     		
-    		$this->Event();
-    		$this->Config();
+    			$this->Event();
+    			$this->Config();
 			$this->system = $this->getServer()->getPluginManager()->getPlugin("EconomyAPI");
-    		$this->saveDefaultConfig();
-        	$this->reloadConfig();
-        	
+    			$this->saveDefaultConfig();
+        		$this->reloadConfig();
+        		
 			$this->h = 0; // 鬼
-    		$this->t = 0; // 逃走者
-    		$this->all = $this->h + $this->t; // 鬼、逃走者合わせて
+    			$this->t = 0; // 逃走者
+    			$this->all = $this->h + $this->t; // 鬼、逃走者合わせて
     		
-    		$this->game = false; //ゲームの状態
-    		$this->win = 0; // 賞金
-    		$this->cogame = false;
+    			$this->game = false; //ゲームの状態
+    			$this->win = 0; // 賞金
+    			$this->cogame = false;
     		
     		
-    		$this->map = 1;
+    			$this->map = 1;
     		
-    		$this->gametime = $this->config->get("GameTime");
+    			$this->gametime = $this->config->get("GameTime");
  			$this->wt = $this->config->get("WaitTime");
  			
  			$this->getScheduler()->scheduleRepeatingTask(new GameTask($this, $this), 20);
   			$this->getScheduler()->scheduleRepeatingTask(new StartTask($this, $this), 20);
+			
+			if($this->getServer()->getPluginManager()->getPlugin("RunForMoney") !== NULL){
+          		$this->getLogger()->error("RunForMoneyを同時に使うことはできません。");
+			$this->getLogger()->error("プラグインを無効化しています...");
+          		$this->getServer()->getPluginManager()->disablePlugin($this);
+        		}
+        		}
   		}
   		
   		public function ReloadGame()
