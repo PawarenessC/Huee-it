@@ -2,15 +2,7 @@ MAP1:
   Runner:
     x: 326
     "y": 4
-    z: 270
-  Jall:
-    x: 305
-    "y": 5
-    z: 331
-  Watch:
-    x: 255
-    "y": 4
-    z: 255
+    z: 278
   Hunter:
     x: 246
     "y": 4
@@ -21,14 +13,6 @@ MAP2:
     x: 11
     "y": 4
     z: 514
-  Jall:
-    x: 191
-    "y": 9
-    z: 810
-  Watch:
-    x: 11
-    "y": 11
-    z: 11
   Hunter:
     x: 666
     "y": 1818
