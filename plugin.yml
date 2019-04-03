@@ -1,6 +1,6 @@
 name: Huee-it
 main: pawarenessc\HI\Main
-version: 0.1
+version: 0.4
 api: [4,3]
 author: PawarenessC
 load: POSTWORLD
