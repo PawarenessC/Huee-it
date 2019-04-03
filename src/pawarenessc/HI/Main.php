@@ -93,7 +93,6 @@ class Main extends pluginBase implements Listener
 			$this->getLogger()->error("プラグインを無効化しています...");
           		$this->getServer()->getPluginManager()->disablePlugin($this);
         		}
-        		}
   		}
   		
   		public function ReloadGame()
