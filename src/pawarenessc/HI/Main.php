@@ -56,7 +56,7 @@ class Main extends pluginBase implements Listener
 		public function onEnable()
     	{
     		$this->getLogger()->info("=========================");
- 			$this->getLogger()->info("Huee itを読み込みました");
+ 			$this->getLogger()->info("Huee-itを読み込みました");
  			$this->getLogger()->info("制作者: PawarenessC");
  			$this->getLogger()->info("ライセンス: NYSL Version 0.9982");
  			$this->getLogger()->info("http://www.kmonos.net/nysl/");
